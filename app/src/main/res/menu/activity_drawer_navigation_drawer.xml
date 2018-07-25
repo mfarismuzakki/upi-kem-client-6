@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/kembali_beranda"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/profil"
+            android:icon="@drawable/ic_menu_profil"
+            android:title="Profil" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/tentang_kami"
+            android:icon="@drawable/ic_menu_info"
+            android:title="Tentang Kami" />
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

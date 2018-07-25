@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.upi.bahasaindonesia.kem.ProfilFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="20dp"
+                android:background="#177287">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ikon_profil"/>
+
+                <TextView
+                    android:id="@+id/nama_lengkap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/putih"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Nama Lengkap"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/people"/>
+                <TextView
+                    android:id="@+id/nisn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/hitam"
+                    android:textSize="20sp"
+                    android:text="NISN"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/school"/>
+                <TextView
+                    android:id="@+id/sekolah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/hitam"
+                    android:textSize="20sp"
+                    android:text="SMP Harapan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ikon_kelas"/>
+                <TextView
+                    android:id="@+id/kelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/hitam"
+                    android:textSize="20sp"
+                    android:text="7 SMP"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ganti_foto_profil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/biru"
+                android:text="Ganti Foto Profil"/>
+
+            <TextView
+                android:id="@+id/ganti_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/biru"
+                android:text="Ganti Kata Sandi"/>
+
+            <TextView
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/biru"
+                android:text="Reset"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

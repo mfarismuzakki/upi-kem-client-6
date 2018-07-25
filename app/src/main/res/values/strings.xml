@@ -1,0 +1,25 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">KEM Kelas 8</string>
+    <string name="logo_aplikasi">Logo Aplikasi</string>
+    <string name="masukkan_nisn">Masukkan NISN</string>
+    <string name="masukkan_kata_sandi">Masukkan Kata Sandi</string>
+    <string name="masuk">Masuk</string>
+    <string name="beranda">Beranda</string>
+    <string name="menu">Menu</string>
+    <string name="info">Info</string>
+    <string name="ikon_informasi">Ikon Informasi</string>
+    <string name="petunjuk">Petunjuk</string>
+    <string name="ikon_petunjuk">Ikon Petunjuk</string>
+    <string name="latihan">Latihan</string>
+    <string name="grafik">Grafik</string>
+    <string name="informasi">Informasi</string>
+    <string name="selesai_membaca">Selesai Membaca</string>
+    <string name="teks_bacaan">Teks bacaan...</string>
+    <string name="judul_teks">Judul Teks</string>
+    <string name="isi_informasi"><b>Kemampuan Efektif Membaca (KEM)</b> merupakan ukuran kemampuan membaca seseorang. Skor KEM diperoleh dari perpaduan antara kecepatan membaca dan pemahaman bacaan seseorang.\n\nPada aplikasi ini,  terdapat teks dan soal pemahaman untuk melatih kemampuan efektif membaca kamu. Setelah kamu membaca teks dan menjawab soal pemahaman,  maka kamu akan memperoleh skor KEM. \n\nSkor KEM minimal untuk jenjang SD yaitu 100 kata per menit (kpm). Apabila skor kamu masih kurang dari 100 kpm, artinya kamu harus lebih banyak berlatih membaca.\n\n<b>Rumus KEM</b></string>
+    <string name="tentang_kami">Aplikasi ini dirancang dalam sistem Android untuk mengukur Kemampuan Efektif Membaca (KEM) kelas 2 SMP.\n\nAplikasi ini dapat membantu siswa dan guru dalam proses pembelajaran. Selain itu, aplikasi ini dapat memudahkan siswa berlatih meningkatkan KEM secara mandiri di mana pun siswa berada.\n\nAplikasi ini dirancang untuk setiap tingkatan kelas pada jenjang SD, SMP, dan SMA.\n\nVersi 1\n\nTim Perancang:\n1. Dewi Mustikaningsih\n2. Dr. Hj. Vismaia S. Damaianti, M.Pd.\n3. Rosita Rahma, M.Pd.\n4. Dr. Hj. Yeti Mulyati, M.Pd.\n\nPengembang Aplikasi:\n1. Rizki Fauzi Rahman</string>
+    <string name="header"><b>KEMAMPUAN EFEKTIF \n MEMBACA \n KELAS 8 SMP</b></string>
+</resources>

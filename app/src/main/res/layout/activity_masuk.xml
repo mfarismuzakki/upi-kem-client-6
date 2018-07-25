@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/latar"
+    tools:context=".MasukActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="40dp"
+            android:contentDescription="@string/logo_aplikasi"
+            android:src="@drawable/logo_min" />
+
+        <ProgressBar
+            android:id="@+id/bilah_kemajuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boks_masukan"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/masuk_nisn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparan"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ikon_pengguna"
+                android:hint="@string/masukkan_nisn"
+                android:inputType="number"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boks_masukan"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/masuk_kata_sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparan"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ikon_gembok"
+                android:hint="@string/masukkan_kata_sandi"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tombol_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tombol_utama"
+            android:padding="17dp"
+            android:text="@string/masuk"
+            android:textColor="@color/putih"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

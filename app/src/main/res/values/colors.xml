@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="putih">#ffffff</color>
+    <color name="biru">#1b849c</color>
+    <color name="biru2">#177287</color>
+    <color name="hijau">#18A076</color>
+    <color name="kuning">#FDBD57</color>
+    <color name="abu">#7F7F7F</color>
+    <color name="abu2">#d7d7d7</color>
+    <color name="hitam">#000000</color>
+    <color name="transparan">#00000000</color>
+    <color name="kuning2">#FFFF00</color>
+
+</resources>
