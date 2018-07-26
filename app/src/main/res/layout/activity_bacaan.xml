@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BacaanActivity"
-    android:background="@color/putih">
+    android:background="@drawable/latar"
+    tools:context=".BacaanActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,12 +16,12 @@
             android:id="@+id/stopwatch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="@color/biru"
+            android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"/>
+            android:gravity="end"
+            android:textColor="@color/hitam"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -31,8 +31,9 @@
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="20dp"
-                android:layout_marginBottom="50dp">
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/latar"
+                android:padding="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -43,19 +44,19 @@
                         android:id="@+id/teks_buku_judul"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="30sp"
+                        android:layout_marginBottom="20dp"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:textColor="@color/biru"
-                        android:layout_marginBottom="20dp"/>
+                        android:textColor="@color/hitam"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/teks_buku_teks"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
                         android:lineSpacingExtra="7dp"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
 
                 </LinearLayout>
 
@@ -65,14 +66,14 @@
                 android:id="@+id/tombol_selesai_membaca"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="@string/selesai_membaca"
-                android:textSize="20sp"
-                android:background="@drawable/tombol_informasi"
-                android:textStyle="bold"
-                android:textColor="@color/putih"
                 android:layout_gravity="bottom"
                 android:layout_margin="10dp"
-                android:visibility="gone"/>
+                android:background="@drawable/tombol_informasi"
+                android:text="@string/selesai_membaca"
+                android:textColor="@color/putih"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
 
         </android.support.v7.widget.CardView>
 
@@ -82,12 +83,13 @@
         android:id="@+id/loading_bacaan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/latar"
         android:gravity="center">
 
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center" />
 
     </LinearLayout>
 

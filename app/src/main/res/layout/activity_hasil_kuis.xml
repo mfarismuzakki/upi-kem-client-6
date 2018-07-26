@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HasilKuisActivity"
-    android:background="@color/biru"
-    android:padding="10dp">
+    android:background="@drawable/latar"
+    android:padding="10dp"
+    tools:context=".HasilKuisActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,19 +24,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
                 android:text="Waktu membaca"
-                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/waktu_baca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text=": 200 detik"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/waktu_baca"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:text=": 200 detik"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp" />
-            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,9 +48,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
                 android:text="Jawaban yang benar"
-                android:textStyle="bold"
                 android:textColor="#ffffff"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/jumlah_soal_benar"
@@ -67,7 +67,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
         android:gravity="center_vertical"
         android:orientation="vertical">
 
@@ -76,20 +76,20 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Skor:"
-            android:textStyle="bold"
             android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/skor_kpm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="141 kpm"
-                android:textStyle="bold"
-                android:textColor="#ffffff"
-                android:textSize="30sp" />
+        <TextView
+            android:id="@+id/skor_kpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="141 kpm"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -102,17 +102,17 @@
             android:stepSize="1"
             android:theme="@style/RatingBar" />
 
-            <TextView
-                android:id="@+id/pesan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Wow, hebat sekali!"
-                android:textStyle="bold"
-                android:textColor="#ffffff"
-                android:layout_margin="10dp"
-                android:textSize="30sp" />
+        <TextView
+            android:id="@+id/pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Wow, hebat sekali!"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -131,8 +131,8 @@
             android:layout_weight="1"
             android:background="@drawable/tombol_biru2"
             android:text="Latihan"
-            android:textSize="20sp"
             android:textColor="#ffffff"
+            android:textSize="20sp"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -143,8 +143,8 @@
             android:layout_weight="1"
             android:background="@drawable/tombol_biru2"
             android:text="Beranda"
-            android:textSize="20sp"
             android:textColor="#ffffff"
+            android:textSize="20sp"
             tools:ignore="ButtonStyle" />
 
     </LinearLayout>

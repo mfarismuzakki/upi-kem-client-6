@@ -46,7 +46,9 @@ public class SliderActivity extends AppCompatActivity {
         mNextBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                mSlideViewPager.setCurrentItem(mCurrentPage + 1);
+
+                startActivity(new Intent(SliderActivity.this, MasukActivity.class));
+
             }
         });
 
@@ -92,8 +94,15 @@ public class SliderActivity extends AppCompatActivity {
                     }
                 });
             }else{
+                mNextBtn.setText("LEWATI");
                 mNextBtn.setEnabled(true);
-                mNextBtn.setVisibility(View.INVISIBLE);
+                //mNextBtn.setVisibility(View.INVISIBLE);
+                mNextBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(SliderActivity.this, MasukActivity.class));
+                    }
+                });
             }
 
         }

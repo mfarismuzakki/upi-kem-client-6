@@ -23,8 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="138dp"
-        android:background="@android:color/transparent" />
+        android:layout_marginBottom="107dp"
+        android:background="@android:color/transparent"
+        android:text="LEWATI" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/slideViewPager"

@@ -10,9 +10,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="270dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginRight="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         app:srcCompat="@drawable/s1" />
 
     <TextView
@@ -27,5 +27,6 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="Lorem"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 </RelativeLayout>
