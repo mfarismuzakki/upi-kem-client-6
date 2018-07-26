@@ -23,6 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-250dp"
         android:font="@font/comic_sans"
+        android:fontFamily="@font/comic_sans"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="Lorem"
