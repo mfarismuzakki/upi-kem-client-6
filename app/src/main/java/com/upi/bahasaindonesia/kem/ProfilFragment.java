@@ -12,6 +12,7 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +38,8 @@ import java.util.Objects;
 public class ProfilFragment extends Fragment {
 
     TextView restart, nama, sekolah, kelas, nisn, ganti_password, ganti_foto_profil;
+    public static ImageView foto;
+    private int[] gambar = {R.drawable.profil_1, R.drawable.profil_2, R.drawable.profil_3, R.drawable.profil_4, R.drawable.profil_5, R.drawable.profil_6, R.drawable.profil_7, R.drawable.profil_8};
 
     public ProfilFragment() {
         // Required empty public constructor
@@ -104,6 +107,17 @@ public class ProfilFragment extends Fragment {
 
         nisn = v.findViewById(R.id.nisn);
         nisn.setText(BerandaActivity.akun.getNisn());
+
+        foto = v.findViewById(R.id.foto);
+        int status = 0, i = 1;
+        while (status == 0 && i < 9){
+            if (BerandaActivity.akun.getFotoProfil().equals("profil_" + Integer.toString(i))){
+                int index = i;
+                foto.setImageResource(gambar[index-1]);
+                status = 1;
+            }
+            i++;
+        }
 
         return v;
     }

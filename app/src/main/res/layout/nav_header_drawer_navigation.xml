@@ -12,7 +12,7 @@
     tools:ignore="RtlSymmetry">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/foto_profil"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"

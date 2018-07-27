@@ -159,6 +159,7 @@ public class MasukActivity extends AppCompatActivity {
                         akun.setSekolah(jsonObject.getString("sekolah"));
                         akun.setKelas(jsonObject.getInt("kelas"));
                         akun.setNomorTeksBacaan(jsonObject.getInt("nomor_buku_teks"));
+                        akun.setFotoProfil(jsonObject.getString("foto_profil"));
 
                         try {
                             url = new URL(Variables.API + "Buku_Teks/get_by_class/" + Integer.toString(akun.getKelas()));
