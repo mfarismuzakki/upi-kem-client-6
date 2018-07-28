@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#18748A"
+    android:background="@drawable/latar"
     tools:context="com.upi.bahasaindonesia.kem.GantiFotoProfilActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -67,8 +67,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
-        android:background="@color/putih">
+        android:layout_marginTop="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"

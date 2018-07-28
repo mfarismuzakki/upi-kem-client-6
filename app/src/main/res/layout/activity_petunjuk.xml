@@ -39,7 +39,6 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="30dp"
                     android:gravity="right"
                     android:padding="0dp"
                     android:text="@string/petunjuk"
@@ -92,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/boks_masukan"
                         android:padding="20dp"
-                        android:text="Klik menu &quot;latihan&quot; pada beranda"
+                        android:text="Setelah membaca info dan petunjuk, silakan klik tombol latihan."
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -119,7 +118,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/boks_masukan"
                         android:padding="20dp"
-                        android:text="Selanjutnya, pilih teks pertama."
+                        android:text="Lalu, pilih salah satu teks yang akan dibaca."
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -146,7 +145,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/boks_masukan"
                         android:padding="20dp"
-                        android:text="Bacalah teks yang dipilih dengan saksama."
+                        android:text="Kemudian, mulai bacalah teks tersebut."
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -173,7 +172,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/boks_masukan"
                         android:padding="20dp"
-                        android:text="Klik &quot;selesai&quot; apabila kamu sudah membaca teks dengan tuntas."
+                        android:text="Selanjutnya, jawablah 5 buah pertanyaan yang tertera dengan cara mengklik pilihan jawaban benar."
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -200,7 +199,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/boks_masukan"
                         android:padding="20dp"
-                        android:text="Kemudian jawablah pertanyaan yang tertera dengan cara mengklik pilihan jawaban yang benar."
+                        android:text="Setelah selesai, lanjutkanlah dengan teks lainnya, dengan langkah yang sama seperti sebelumnya."
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -227,60 +226,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/boks_masukan"
                         android:padding="20dp"
-                        android:text="Setelah selesai, kamu bisa melanjutkan ke teks berikutnya atau kembali ke beranda."
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        android:text="7."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/boks_masukan"
-                        android:padding="20dp"
-                        android:text="Klik menu “grafik” pada beranda apabila kamu ingin melihat perkembangan kemampuan membacamu."
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        android:text="8."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/boks_masukan"
-                        android:padding="20dp"
-                        android:text="Jika kamu sudah selesai membaca semua teks, kamu bisa mengulang latihan dari teks pertama lagi."
+                        android:text="Pada akhir latihan akan terlihat hasil latihan berupa grafik skor KEM."
                         android:textColor="#000000"
                         android:textSize="20sp" />
 

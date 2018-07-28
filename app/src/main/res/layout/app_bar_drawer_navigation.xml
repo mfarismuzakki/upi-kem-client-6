@@ -5,20 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.upi.bahasaindonesia.kem.BerandaActivity"
-    tools:showIn="@layout/app_bar_drawer_navigation">
+    tools:showIn="@layout/app_bar_drawer_navigation"
+    android:background="@drawable/latar">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:padding="10dp"
-        app:elevation="0dp">
+        app:elevation="0dp"
+        android:background="@color/transparan">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@color/transparan">
 
             <TextView
                 android:id="@+id/title_bar"
@@ -42,7 +45,6 @@
         android:id="@+id/konten"
         android:layout_marginTop="70dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/putih"/>
+        android:layout_height="match_parent"/>
 
 </android.support.design.widget.CoordinatorLayout>

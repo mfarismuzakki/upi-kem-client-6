@@ -68,7 +68,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
                 android:layout_margin="10dp"
-                android:background="@drawable/tombol_informasi"
+                android:background="@drawable/tombol_menu"
                 android:text="@string/selesai_membaca"
                 android:textColor="@color/putih"
                 android:textSize="20sp"

@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/latar"
     tools:context=".SoalLatihanActivity">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/transparan"
         app:cardElevation="0dp">
 
         <ScrollView
@@ -114,7 +116,7 @@
             android:textSize="20sp"
             android:layout_gravity="bottom"
             android:textColor="@color/putih"
-            android:background="@drawable/tombol_informasi"
+            android:background="@drawable/tombol_menu"
             android:text="Selanjutnya"
             android:layout_margin="10dp"/>
 

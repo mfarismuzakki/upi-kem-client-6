@@ -21,6 +21,18 @@
             android:contentDescription="@string/logo_aplikasi"
             android:src="@drawable/logo_min" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cooper_black"
+            android:text="Kemampuan\nEfektif Membaca\nKelas 8 SMP"
+            android:textAlignment="center"
+            android:textColor="@color/biru3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"/>
+
         <ProgressBar
             android:id="@+id/bilah_kemajuan"
             android:layout_width="wrap_content"

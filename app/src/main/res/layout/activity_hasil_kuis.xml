@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
                 android:text="Waktu membaca"
-                android:textColor="#ffffff"
+                android:textColor="#37474f"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:text=": 200 detik"
-                android:textColor="#ffffff"
+                android:textColor="#37474f"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
                 android:text="Jawaban yang benar"
-                android:textColor="#ffffff"
+                android:textColor="#37474f"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:text=": 4"
-                android:textColor="#ffffff"
+                android:textColor="#37474f"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -76,17 +76,20 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Skor:"
-            android:textColor="#ffffff"
+            android:textColor="#37474f"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/skor_kpm"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
+            android:layout_gravity="center"
             android:text="141 kpm"
+            android:padding="10dp"
+            android:background="@drawable/tombol_menu"
             android:textColor="#ffffff"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -100,7 +103,8 @@
             android:numStars="5"
             android:rating="4"
             android:stepSize="1"
-            android:theme="@style/RatingBar" />
+            android:theme="@style/RatingBar"
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/pesan"
@@ -110,7 +114,7 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Wow, hebat sekali!"
-            android:textColor="#ffffff"
+            android:textColor="#37474f"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -129,20 +133,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/tombol_biru2"
+            android:background="@drawable/tombol_menu"
             android:text="Latihan"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            tools:ignore="ButtonStyle" />
-
-        <Button
-            android:id="@+id/kembali_beranda"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/tombol_biru2"
-            android:text="Beranda"
             android:textColor="#ffffff"
             android:textSize="20sp"
             tools:ignore="ButtonStyle" />

@@ -36,7 +36,7 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
         this.context = context;
     }
 
-    private String[] warna = {"#FDBD57", "#E4716E", "#666666", "#18748A", "#18A076"};
+//    private String[] warna = {"#FDBD57", "#E4716E", "#666666", "#18748A", "#18A076"};
 
     private int[] gambar1 = {R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.e, R.drawable.f, R.drawable.g, R.drawable.h, R.drawable.i, R.drawable.j};
 
@@ -95,10 +95,10 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
             });
         }
 
-        GradientDrawable gradientDrawable = new GradientDrawable();
-        gradientDrawable.setColor(Color.parseColor(warna[position % warna.length]));
-        gradientDrawable.setCornerRadius(15);
-        holder.wadah.setBackground(gradientDrawable);
+//        GradientDrawable gradientDrawable = new GradientDrawable();
+//        gradientDrawable.setColor(Color.parseColor(warna[position % warna.length]));
+//        gradientDrawable.setCornerRadius(15);
+//        holder.wadah.setBackground(gradientDrawable);
 
         // "% gambar1.length" adalah sebagai pengaman saja
         holder.gambar.setImageResource(gambar1[position % gambar1.length]);
