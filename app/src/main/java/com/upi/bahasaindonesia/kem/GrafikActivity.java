@@ -10,6 +10,18 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import com.github.mikephil.charting.charts.CombinedChart;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.CombinedData;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.github.mikephil.charting.utils.ColorTemplate;
 import com.jjoe64.graphview.DefaultLabelFormatter;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.ValueDependentColor;
@@ -132,29 +144,83 @@ public class GrafikActivity extends AppCompatActivity {
         protected void onPostExecute(final Boolean success) {
             super.onPostExecute(success);
 
-            GraphView graphView = findViewById(R.id.grafik);
+            CombinedChart grafik = findViewById(R.id.grafik);
 
-            DataPoint[] dataPoints = new DataPoint[skors.size()];
-            for (int i = 0; i < skors.size(); i++) {
-                dataPoints[i] = new DataPoint(i, skors.get(i));
+            ArrayList<BarEntry> entries = new ArrayList<>();
+
+            entries.add(new BarEntry(0, 0));
+            for (int i = 1; i < 11; i++) {
+                if (i - 1 < skors.size()) {
+                    entries.add(new BarEntry(i, skors.get(i - 1).intValue()));
+                } else {
+                    entries.add(new BarEntry(i, 0));
+                }
             }
-            LineGraphSeries<DataPoint> series = new LineGraphSeries<>(dataPoints);
+            entries.add(new BarEntry(11, 0));
 
-            DataPoint[] dataPoints1 = new DataPoint[skors.size()];
-            for (int i = 0; i < skors.size(); i++) {
-                dataPoints1[i] = new DataPoint(i, 150);
+            ArrayList<Entry> entries1 = new ArrayList<>();
+
+            for (int i = 0; i < 12; i++) {
+                entries1.add(new BarEntry(i, 140));
             }
-            LineGraphSeries<DataPoint> series1 = new LineGraphSeries<>(dataPoints1);
 
-            series1.setColor(Color.GREEN);
+            final ArrayList<String> labels = new ArrayList<>();
+            labels.add("");
+            labels.add("Teks 1");
+            labels.add("Teks 2");
+            labels.add("Teks 3");
+            labels.add("Teks 4");
+            labels.add("Teks 5");
+            labels.add("Teks 6");
+            labels.add("Teks 7");
+            labels.add("Teks 8");
+            labels.add("Teks 9");
+            labels.add("Teks 10");
+            labels.add("");
 
-            series.setDrawDataPoints(true);
-            series.setDataPointsRadius(10);
+            grafik.getXAxis().setValueFormatter(new IndexAxisValueFormatter(labels));
 
-            graphView.getViewport().setMinX(1);
+            grafik.getXAxis().setGranularity(1);
+            grafik.getXAxis().setGranularityEnabled(true);
 
-            graphView.addSeries(series);
-            graphView.addSeries(series1);
+            grafik.setDrawGridBackground(false);
+
+            grafik.getDescription().setEnabled(false);
+
+            grafik.setDrawOrder(new CombinedChart.DrawOrder[]{
+                    CombinedChart.DrawOrder.BAR,  CombinedChart.DrawOrder.LINE
+            });
+
+            BarDataSet barDataSet = new BarDataSet(entries, "KPM");
+            barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+            barDataSet.setValueTextColor(Color.BLACK);
+
+            BarData barData = new BarData(barDataSet);
+
+            LineDataSet lineDataSet = new LineDataSet(entries1, "Ideal");
+            lineDataSet.setColor(Color.RED);
+
+            LineData lineData = new LineData(lineDataSet);
+
+            CombinedData combinedData = new CombinedData();
+            combinedData.setData(barData);
+            combinedData.setData(lineData);
+
+            grafik.setData(combinedData);
+            grafik.invalidate();
+
+            YAxis rightAxis = grafik.getAxisRight();
+            rightAxis.setDrawGridLines(false);
+            rightAxis.setAxisMinimum(0f); // this replaces setStartAtZero(true)
+
+            YAxis leftAxis = grafik.getAxisLeft();
+            leftAxis.setDrawGridLines(false);
+            leftAxis.setAxisMinimum(0f); // this replaces setStartAtZero(true)
+
+            XAxis xAxis = grafik.getXAxis();
+            xAxis.setPosition(XAxis.XAxisPosition.BOTH_SIDED);
+            xAxis.setAxisMinimum(0f);
+            xAxis.setGranularity(1f);
 
             LinearLayout loadingGrafik = findViewById(R.id.loading_grafik);
             loadingGrafik.setVisibility(View.GONE);

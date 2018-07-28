@@ -10,6 +10,7 @@ public class Akun implements Serializable {
     private String sekolah;
     private int kelas;
     private int nomorTeksBacaan;
+    private String foto_profil;
 
     public int getKode() {
         return kode;
@@ -65,5 +66,13 @@ public class Akun implements Serializable {
 
     public void setNomorTeksBacaan(int nomorTeksBacaan) {
         this.nomorTeksBacaan = nomorTeksBacaan;
+    }
+
+    public String getFotoProfil() {
+        return foto_profil;
+    }
+
+    public void setFotoProfil(String foto_profil) {
+        this.foto_profil = foto_profil;
     }
 }

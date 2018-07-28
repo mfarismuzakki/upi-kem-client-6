@@ -32,6 +32,8 @@ public class BerandaActivity extends AppCompatActivity
     public static Akun akun;
     public static ArrayList<BukuTeks> bukuTeks;
     private TextView title;
+    private int[] gambar = {R.drawable.profil_1, R.drawable.profil_2, R.drawable.profil_3, R.drawable.profil_4, R.drawable.profil_5, R.drawable.profil_6, R.drawable.profil_7, R.drawable.profil_8};
+    public static ImageView foto_profil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,17 @@ public class BerandaActivity extends AppCompatActivity
 
         TextView username = headerView.findViewById(R.id.nama_profil);
         username.setText(akun.getNamaLengkap());
+
+        foto_profil = headerView.findViewById(R.id.foto_profil);
+        int status = 0, i = 1;
+        while (status == 0 && i < 9){
+            if (akun.getFotoProfil().equals("profil_" + Integer.toString(i))){
+                int index = i;
+                foto_profil.setImageResource(gambar[index-1]);
+                status = 1;
+            }
+            i++;
+        }
     }
 
     @Override

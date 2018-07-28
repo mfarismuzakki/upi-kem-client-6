@@ -43,12 +43,10 @@ public class SliderActivity extends AppCompatActivity {
 
         mSlideViewPager.addOnPageChangeListener(viewListener);
 
-        mNextBtn.setOnClickListener(new View.OnClickListener(){
+        mNextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-
-                startActivity(new Intent(SliderActivity.this, MasukActivity.class));
-
+            public void onClick(View view) {
+                finish();
             }
         });
 
@@ -86,21 +84,18 @@ public class SliderActivity extends AppCompatActivity {
 
             if(i == mDots.length - 1){
                 mNextBtn.setText("Mulai");
-                mNextBtn.setVisibility(View.VISIBLE);
                 mNextBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(SliderActivity.this, MasukActivity.class));
+                        finish();
                     }
                 });
             }else{
                 mNextBtn.setText("LEWATI");
-                mNextBtn.setEnabled(true);
-                //mNextBtn.setVisibility(View.INVISIBLE);
                 mNextBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(SliderActivity.this, MasukActivity.class));
+                        finish();
                     }
                 });
             }

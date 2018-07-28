@@ -40,6 +40,8 @@ public class MasukActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        startActivity(new Intent(getApplicationContext(), SliderActivity.class));
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_masuk);
 
@@ -159,6 +161,7 @@ public class MasukActivity extends AppCompatActivity {
                         akun.setSekolah(jsonObject.getString("sekolah"));
                         akun.setKelas(jsonObject.getInt("kelas"));
                         akun.setNomorTeksBacaan(jsonObject.getInt("nomor_buku_teks"));
+                        akun.setFotoProfil(jsonObject.getString("foto_profil"));
 
                         try {
                             url = new URL(Variables.API + "Buku_Teks/get_by_class/" + Integer.toString(akun.getKelas()));

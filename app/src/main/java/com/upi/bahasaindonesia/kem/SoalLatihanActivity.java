@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -145,6 +146,9 @@ public class SoalLatihanActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+
+            LinearLayout loading = findViewById(R.id.loading_soal);
+            loading.setVisibility(View.VISIBLE);
         }
 
         @Override

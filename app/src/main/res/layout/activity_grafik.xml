@@ -39,15 +39,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="right"
                     android:padding="0dp"
-                    android:text="@string/grafik"
-                    android:textAlignment="center"
+                    android:text="GRAFIK NILAI"
+                    android:textAlignment="gravity"
                     android:textAllCaps="true"
-                    android:textStyle="bold"
                     android:textColor="@color/hitam"
                     android:textSize="24sp"
-                    android:layout_marginEnd="30dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -61,10 +61,10 @@
         android:padding="10dp"
         android:layout_marginTop="70dp">
 
-        <com.jjoe64.graphview.GraphView
+        <com.github.mikephil.charting.charts.CombinedChart
             android:id="@+id/grafik"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 

@@ -1,13 +1,14 @@
 package com.upi.bahasaindonesia.kem;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import com.upi.bahasaindonesia.kem.globals.Variables;
 
@@ -20,11 +21,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.util.Objects;
 
 public class GantiPasswordActivity extends AppCompatActivity {
 
     private EditText kata_sandi, kata_sandi_ulang;
-    private Button ganti, kembali;
     private String kataSandi;
 
     @Override
@@ -34,8 +35,8 @@ public class GantiPasswordActivity extends AppCompatActivity {
 
         kata_sandi = findViewById(R.id.masuk_kata_sandi);
         kata_sandi_ulang = findViewById(R.id.masuk_kata_sandi_ulang);
-        ganti = findViewById(R.id.ganti);
-        kembali = findViewById(R.id.kembali);
+        Button ganti = findViewById(R.id.ganti);
+        Button kembali = findViewById(R.id.kembali);
 
         ganti.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,11 +59,18 @@ public class GantiPasswordActivity extends AppCompatActivity {
     @SuppressLint("StaticFieldLeak")
     private class ProsesGantiPass extends AsyncTask<Void, Void, Boolean> {
 
-        private String pesan = "";
-
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+
+            ProgressBar bilahKemajuan = findViewById(R.id.bilah_kemajuan);
+            bilahKemajuan.setVisibility(View.VISIBLE);
+
+            InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            if (inputManager != null) {
+                inputManager.hideSoftInputFromWindow(Objects.requireNonNull(getCurrentFocus()).getWindowToken(),
+                        InputMethodManager.HIDE_NOT_ALWAYS);
+            }
         }
 
         @Override

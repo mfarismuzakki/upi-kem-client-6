@@ -14,5 +14,6 @@
     <color name="hitam">#000000</color>
     <color name="transparan">#00000000</color>
     <color name="kuning2">#FFFF00</color>
+    <color name="kuningbintang">#ebfb9928</color>
 
 </resources>

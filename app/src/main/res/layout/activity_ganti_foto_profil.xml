@@ -4,163 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/biru2"
+    android:background="#18748A"
     tools:context="com.upi.bahasaindonesia.kem.GantiFotoProfilActivity">
 
-
-    <ScrollView
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="70dp"
+        android:background="@color/transparan"
+        app:elevation="0dp">
 
-        <LinearLayout
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <android.support.design.widget.AppBarLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:background="@color/transparan"
-                app:elevation="0dp">
-
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:contentInsetStart="0dp"
-                    app:layout_scrollFlags="scroll">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:paddingEnd="20dp"
-                        android:paddingStart="20dp">
-
-                        <ImageButton
-                            android:id="@+id/tombol_keluar"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:background="@color/transparan"
-                            android:contentDescription="@string/menu"
-                            android:src="@drawable/ikon_kembali_putih" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight="5"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="Profil"
-                            android:textAlignment="center"
-                            android:textAllCaps="true"
-                            android:textColor="@color/putih"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
-
-                        <ImageButton
-                            android:id="@+id/tombol_simpan"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:background="@color/transparan"
-                            android:contentDescription="@string/menu"
-                            android:src="@drawable/ikon_simpan_putih" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.Toolbar>
-
-            </android.support.design.widget.AppBarLayout>
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
-                android:background="@color/putih">
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
 
-                <ImageView
-                    android:id="@+id/tampil_foto"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="30dp"
-                    android:background="@drawable/ikon_profil"/>
+                <ImageButton
+                    android:id="@+id/tombol_keluar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparan"
+                    android:contentDescription="@string/menu"
+                    android:src="@drawable/ikon_kembali_putih" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Profil"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/putih"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/tombol_simpan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparan"
+                    android:contentDescription="@string/menu"
+                    android:src="@drawable/ikon_simpan_putih" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@color/putih">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tampil_foto"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/ikon_profil"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"
+                android:orientation="vertical"
+                android:background="@color/abu2">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="150dp"
-                    android:orientation="vertical"
-                    android:background="@color/abu2">
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/profil_1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/profil_1"/>
+                    <ImageButton
+                        android:id="@+id/profil_2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/profil_2"/>
+                    <ImageButton
+                        android:id="@+id/profil_3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/profil_3"/>
+                    <ImageButton
+                        android:id="@+id/profil_4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/profil_4"/>
+                </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="20dp"
-                        android:paddingLeft="20dp"
-                        android:paddingBottom="20dp"
-                        android:paddingRight="20dp"
-                        android:orientation="horizontal">
-                        <ImageButton
-                            android:id="@+id/profil_1"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:background="@drawable/profil_1"/>
-                        <ImageButton
-                            android:id="@+id/profil_2"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="12dp"
-                            android:background="@drawable/profil_2"/>
-                        <ImageButton
-                            android:id="@+id/profil_3"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="12dp"
-                            android:background="@drawable/profil_3"/>
-                        <ImageButton
-                            android:id="@+id/profil_4"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="12dp"
-                            android:background="@drawable/profil_4"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="20dp"
-                        android:paddingLeft="20dp"
-                        android:paddingBottom="20dp"
-                        android:paddingRight="20dp"
-                        android:orientation="horizontal">
-                        <ImageButton
-                            android:id="@+id/profil_5"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:background="@drawable/profil_5"/>
-                        <ImageButton
-                            android:id="@+id/profil_6"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="12dp"
-                            android:background="@drawable/profil_6"/>
-                        <ImageButton
-                            android:id="@+id/profil_7"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="12dp"
-                            android:background="@drawable/profil_7"/>
-                        <ImageButton
-                            android:id="@+id/profil_8"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="12dp"
-                            android:background="@drawable/profil_8"/>
-                    </LinearLayout>
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/profil_5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/profil_5"/>
+                    <ImageButton
+                        android:id="@+id/profil_6"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/profil_6"/>
+                    <ImageButton
+                        android:id="@+id/profil_7"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/profil_7"/>
+                    <ImageButton
+                        android:id="@+id/profil_8"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/profil_8"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -168,4 +164,20 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/loading_foto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#18748A"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -24,8 +24,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="107dp"
-        android:background="@android:color/transparent"
-        android:text="LEWATI" />
+        android:background="@drawable/bg_blue"
+        android:text="LEWATI"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/slideViewPager"
