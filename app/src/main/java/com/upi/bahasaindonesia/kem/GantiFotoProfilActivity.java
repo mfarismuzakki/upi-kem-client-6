@@ -28,6 +28,11 @@ public class GantiFotoProfilActivity extends AppCompatActivity {
 
     private ImageView tampil_foto;
     private ImageButton profil_1, profil_2, profil_3, profil_4, profil_5, profil_6, profil_7, profil_8;
+<<<<<<< HEAD
+=======
+    private int[] gambar = {R.drawable.profil_1, R.drawable.profil_2, R.drawable.profil_3, R.drawable.profil_4, R.drawable.profil_5, R.drawable.profil_6, R.drawable.profil_7, R.drawable.profil_8};
+    private String select = "profil_1";
+>>>>>>> 11be25fac563fe1163d6bb063fa70144582ece3a
     private ImageButton save, kembali;
     private int[] gambar = {R.drawable.profil_1, R.drawable.profil_2, R.drawable.profil_3, R.drawable.profil_4, R.drawable.profil_5, R.drawable.profil_6, R.drawable.profil_7, R.drawable.profil_8};
     private String select = "profil_1";
@@ -96,6 +101,7 @@ public class GantiFotoProfilActivity extends AppCompatActivity {
                 select = "profil_5";
             }
         });
+<<<<<<< HEAD
 
         profil_6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +119,25 @@ public class GantiFotoProfilActivity extends AppCompatActivity {
             }
         });
 
+=======
+
+        profil_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tampil_foto.setImageResource(gambar[5]);
+                select = "profil_6";
+            }
+        });
+
+        profil_7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tampil_foto.setImageResource(gambar[6]);
+                select = "profil_7";
+            }
+        });
+
+>>>>>>> 11be25fac563fe1163d6bb063fa70144582ece3a
         profil_8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -137,6 +162,7 @@ public class GantiFotoProfilActivity extends AppCompatActivity {
             }
         });
     }
+<<<<<<< HEAD
 
     @SuppressLint("StaticFieldLeak")
     private class ProsesInputHasil extends AsyncTask<Void, Void, Boolean> {
@@ -147,6 +173,15 @@ public class GantiFotoProfilActivity extends AppCompatActivity {
 
             LinearLayout loadingFoto = findViewById(R.id.loading_foto);
             loadingFoto.setVisibility(View.VISIBLE);
+=======
+
+    @SuppressLint("StaticFieldLeak")
+    private class ProsesInputHasil extends AsyncTask<Void, Void, Boolean> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+>>>>>>> 11be25fac563fe1163d6bb063fa70144582ece3a
         }
 
         @Override
