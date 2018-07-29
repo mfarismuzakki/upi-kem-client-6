@@ -15,14 +15,9 @@
         <item name="colorControlNormal">@color/hitam</item>
     </style>
 
-    <style name="RatingBar" parent="Theme.AppCompat">
-        <item name="colorControlNormal">@color/hitam</item>
-        <item name="colorControlActivated">@color/kuning2</item>
-    </style>
-
-    <style name="RatingBarOrange" parent="Theme.AppCompat">
-        <item name="colorControlNormal">@color/hitam</item>
-        <item name="colorControlActivated">@color/kuningbintang</item>
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">@color/cardview_light_background</item>
+        <item name="android:colorControlNormal">#f9a825</item>
     </style>
 
     <style name="ProgressBar" parent="Theme.AppCompat">

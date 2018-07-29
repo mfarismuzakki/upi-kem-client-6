@@ -52,29 +52,25 @@ public class HasilKuisActivity extends AppCompatActivity {
         rating = findViewById(R.id.ratingBar);
         pesan = findViewById(R.id.pesan);
 
-        if (kpm == 0) {
-            rating.setRating(0);
-            pesan.setText("Belajar lebih giat lagi, ya!");
-        }
-        else if (kpm < 45) {
+        if (kpm < 46) {
             rating.setRating(1);
-            pesan.setText("Masih harus ditingkatkan lagi!");
+            pesan.setText("Kemampuan membacamu masih rendah. Semangat Ya!");
         }
-        else if (kpm < 80) {
+        else if (kpm < 93) {
             rating.setRating(2);
-            pesan.setText("Lumayan, tapi masih harus diperbaiki!");
+            pesan.setText("Lumayan! Kamu harus lebih giat berlatih lagi!");
         }
-        else if (kpm < 100) {
+        else if (kpm < 140) {
             rating.setRating(3);
-            pesan.setText("Sedikit lagi kamu akan mencapai skor ideal!");
+            pesan.setText("Keren! Sedikit latihan lagi kamu bisa jadi pembaca yang ideal.");
         }
-        else if (kpm < 120) {
+        else if (kpm < 176) {
             rating.setRating(4);
-            pesan.setText("Kamu telah mencapai skor ideal, hebat!");
+            pesan.setText("Hebat sekali! Kemampuan membacamu sudah ideal.");
         }
         else {
             rating.setRating(5);
-            pesan.setText("Skormu di atas rata-rata, hebat sekali!");
+            pesan.setText("Wow! Kemampuan membacamu super.");
         }
 
         kembaliLatihan = findViewById(R.id.kembali_latihan);
