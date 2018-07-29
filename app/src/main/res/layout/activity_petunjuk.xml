@@ -74,6 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
+                    android:background="@android:color/background_light"
                     android:orientation="horizontal">
 
                     <TextView
@@ -82,9 +83,8 @@
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
                         android:text="1."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -93,13 +93,14 @@
                         android:padding="20dp"
                         android:text="Setelah membaca info dan petunjuk, silakan klik tombol latihan."
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
                     android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
 
@@ -109,9 +110,8 @@
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
                         android:text="2."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -120,13 +120,14 @@
                         android:padding="20dp"
                         android:text="Lalu, pilih salah satu teks yang akan dibaca."
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:textSize="16dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
                     android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
 
@@ -136,9 +137,8 @@
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
                         android:text="3."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -147,13 +147,14 @@
                         android:padding="20dp"
                         android:text="Kemudian, mulai bacalah teks tersebut."
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:textSize="16dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
                     android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
 
@@ -163,9 +164,9 @@
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
                         android:text="4."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
+
 
                     <TextView
                         android:layout_width="match_parent"
@@ -174,13 +175,14 @@
                         android:padding="20dp"
                         android:text="Selanjutnya, jawablah 5 buah pertanyaan yang tertera dengan cara mengklik pilihan jawaban benar."
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:textSize="16dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
                     android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
 
@@ -190,9 +192,8 @@
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
                         android:text="5."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -201,13 +202,14 @@
                         android:padding="20dp"
                         android:text="Setelah selesai, lanjutkanlah dengan teks lainnya, dengan langkah yang sama seperti sebelumnya."
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:textSize="16dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
                     android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
 
@@ -217,9 +219,8 @@
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
                         android:text="6."
-                        android:textColor="@color/putih"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -228,7 +229,7 @@
                         android:padding="20dp"
                         android:text="Pada akhir latihan akan terlihat hasil latihan berupa grafik skor KEM."
                         android:textColor="#000000"
-                        android:textSize="20sp" />
+                        android:textSize="16dp" />
 
                 </LinearLayout>
 

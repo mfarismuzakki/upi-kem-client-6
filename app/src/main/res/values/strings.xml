@@ -23,4 +23,16 @@
     <string name="tentang_kami">Aplikasi ini dibuat untuk mengukur Kemampuan Efektif Membaca (KEM) siswa kelas 8 SMP.\n\nAplikasi ini dapat membantu siswa dan guru dalam proses pembelajaran. Selain itu, aplikasi ini dapat memudahkan siswa berlatih meningkatkan KEM secara mandiri di mana pun siswa berada.\n\nAplikasi ini dirancang dalam beberapa jenjang, yaitu SD, SMP, dan SMA\n\n\n <b>Tim Perancang Aplikasi</b>\n1.Yulia Pertiwi Faisol\n2.Dr. Hj. Vismaia S. D., M.Pd.\n3.Rosita Rahma M.Pd.\n4.Dr. Hj. Yeti Mulyati, M.Pd.\n\n\n<b>Tim Pengembang Aplikasi</b>\n1.Rizki Fauzi Rahman</string>
     <string name="rumus_kem">\n<b>JK</b>: jumlah kata yang dibaca\n<b>W</b>: waktu tempuh baca dalam satuan detik\n<b>B</b>: jumlah jawaban benar\n<b>SI</b>: sekor ideal atau sekor maksimal\n<b>KPM</b>: kata per menit</string>
     <string name="header"><b>KEMAMPUAN EFEKTIF \n MEMBACA \n KELAS 8 SMP</b></string>
+    <string name="petunjukdes">
+Setelah membaca info dan petunjuk, silakan klik tombol menu “latihan”.\n\n
+Lalu, pilih teks secara berurutan dari teks pertama sampai teks terakhir.\n\n
+Kemudian, mulai bacalah teks yang dipilih. Usahakan bacalah secara cepat namun tetap teliti.\n\n
+Setelah selesai membaca, klik tombol “Selesai” untuk melanjutkan ke bagian pertanyaan. (Setelah menekan tombol “Selesai”, kalian tidak bisa membaca ulang teks tersebut).\n\n
+Jawablah 5 buah pertanyaan yang tertera dengan cara memilih pilihan jawaban benar.\n\n
+Jika sudah menjawab 5 pertanyaan tersebut, maka skor KEM kamu akan muncul.\n\n
+Setelah itu, kamu bisa berlatih pada teks selanjutnya, lakukan latihan dengan langkah yang sama seperti sebelumnya.\n\n
+Kamu juga bisa melihat perkembangan kemampuan membaca pada menu “Grafik”. Di sana tertera skor KEM-mu pada setiap teks yang telah dibaca.\n\n
+Jika sepuluh teks sudah kalian baca, kalian bisa memulai kembali berlatih dari teks pertama.\n\n
+Selamat Berlatih!\n\n
+</string>
 </resources>

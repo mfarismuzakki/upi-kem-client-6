@@ -93,7 +93,7 @@ public class SoalLatihanActivity extends AppCompatActivity {
                     kuis.setPoinDidapat(mNilai);
                     kuis.setPoinMax(nilai_max);
                     kuis.setSoalBenar(benar);
-                    
+
                     new ProsesInputHasil().execute();
                 }
             }
