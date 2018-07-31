@@ -83,8 +83,6 @@ public class HasilKuisActivity extends AppCompatActivity {
                 intent.putExtra("bukuteks", BerandaActivity.bukuTeks);
                 startActivity(intent);
 
-                BerandaActivity.akun.setNomorTeksBacaan((BerandaActivity.akun.getNomorTeksBacaan() + 1));
-
                 startActivity(new Intent(getApplicationContext(), DaftarLatihanActivity.class));
 
                 finish();

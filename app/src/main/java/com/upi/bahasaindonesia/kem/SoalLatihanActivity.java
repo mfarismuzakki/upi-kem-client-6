@@ -223,6 +223,8 @@ public class SoalLatihanActivity extends AppCompatActivity {
         protected void onPostExecute(Boolean aBoolean) {
             super.onPostExecute(aBoolean);
 
+            BerandaActivity.akun.setNomorTeksBacaan((BerandaActivity.akun.getNomorTeksBacaan() + 1));
+
             Intent intent = new Intent(SoalLatihanActivity.this, HasilKuisActivity.class);
             intent.putExtra("objKuis", kuis);
             startActivity(intent);
