@@ -117,12 +117,12 @@ public class GrafikActivity extends AppCompatActivity {
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-                        int a = jsonObject.getInt("jumlah_kata");
-                        int b = jsonObject.getInt("waktu_baca");
-                        int c = jsonObject.getInt("poin_pendapatan_kuis");
-                        int d = jsonObject.getInt("poin_maksimal_kuis");
+                        double a = jsonObject.getDouble("jumlah_kata");
+                        double b = jsonObject.getDouble("waktu_baca");
+                        double c = jsonObject.getDouble("poin_pendapatan_kuis");
+                        double d = jsonObject.getDouble("poin_maksimal_kuis");
 
-                        skors.add((double) a / b * 60 * c / d);
+                        skors.add((a / b) * 60 * (c / d));
                     }
 
                 }
